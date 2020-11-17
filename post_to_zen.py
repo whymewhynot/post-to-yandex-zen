@@ -70,10 +70,10 @@ class YandexZenPoster:
         my_profile.click()
         editor = self.driver.find_element_by_link_text('Редактор')
         editor.click()
-        self.save_cookie()
+        self._save_cookie()
         time.sleep(5)
 
-    def save_cookie(self):
+    def _save_cookie(self):
         pickle.dump(self.driver.get_cookies(), open("cookies.pkl", "wb"))
 
     def create_new_post(self):
