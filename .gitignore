@@ -1,0 +1,8 @@
+venv
+.idea
+__pycache__
+messenger.db
+chromedriver.exe
+cookies.pkl
+debug.log
+test.py
